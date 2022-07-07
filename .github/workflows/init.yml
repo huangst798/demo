@@ -11,11 +11,8 @@ jobs:
   HelloWord:
     runs-on: ubuntu-latest
      steps:
-    - name: Print a greeting
+    - name: Print helloword
       env:
-        MY_VAR: Helloword
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
+        H_L: Helloword
       run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+        echo $H_L.

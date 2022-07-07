@@ -1,14 +1,14 @@
-name: Greeting from Mona
+name: HL
 on: push
 
 jobs:
   my-job:
-    name: My Job
+    name: Helloword
     runs-on: ubuntu-latest
     steps:
-    - name: Print a greeting
+    - name: Print helloword
       env:
-        MY_VAR: Helloword
+        H_L: Helloword
       
       run: |
-        echo $MY_VAR.
+        echo $H_L.
