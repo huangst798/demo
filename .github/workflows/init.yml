@@ -1,4 +1,4 @@
-name: helloword
+name: CI
 
 on:
   push:
@@ -8,10 +8,9 @@ on:
 
   workflow_dispatch:
 jobs:
-  HelloWord:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Print helloword
-      run: |
-        echo "12332131"
+      - name: install
+        run: |
