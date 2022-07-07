@@ -1,4 +1,4 @@
-name: CI
+name: helloword
 
 on:
   push:
@@ -8,12 +8,12 @@ on:
 
   workflow_dispatch:
 jobs:
-  build:
+  HelloWord:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: install
-      env:
-          HL: helloword
-      run: |
-        echo $HL
+      - name: Print helloword
+        env:
+          HL: Helloword
+        run: |
+        echo $HL.
