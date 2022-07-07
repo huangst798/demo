@@ -10,8 +10,8 @@ on:
 jobs:
   HelloWord:
     runs-on: ubuntu-latest
-     steps:
-    - name: Print helloword
+      steps:
+      - name: Print helloword
       env:
         H_L: Helloword
       run: |

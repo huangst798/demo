@@ -2,7 +2,7 @@ name: HL
 on: push
 
 jobs:
-  my-job:
+  helloword:
     name: Helloword
     runs-on: ubuntu-latest
     steps:
