@@ -10,6 +10,7 @@ on:
 jobs:
   HelloWord:
     runs-on: ubuntu-latest
+    steps:
       - name: Print helloword
       run: |
         echo "12332131"
