@@ -13,5 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install
+      evn:
+          HL: helloword
         run: |
-        echo $helloword.
+        echo $HL
