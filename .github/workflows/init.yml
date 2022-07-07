@@ -12,7 +12,5 @@ jobs:
     runs-on: ubuntu-latest
       steps:
       - name: Print helloword
-      env:
-        H_L: Helloword
       run: |
-        echo $H_L.
+        echo "12332131"
