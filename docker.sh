@@ -1,5 +1,5 @@
 #!/bin/bash
-image_name='myhello:2.0'
+image_name='myhello:6.0'
 image_id='1104437281'
 docker build -t ${image_name} .
 docker run ${image_name}
