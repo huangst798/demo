@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: install
         run: |
-        bash docker.sh
+        sh docker.sh
