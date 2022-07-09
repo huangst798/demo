@@ -2,8 +2,8 @@
 image_name='myhello:6.0'
 image_id='1104437281'
 image_pwd='hst7562336'
-FILE='src/debian/2-dev.11.Dockerfile'
-IMAGE='2-dev.11'
+FILE='src/alpine/1-curl.Dockerfile'
+IMAGE='1-curl'
 docker login -u ${image_id} --password ${image_pwd}
 # docker build -t ${image_name} .
 # docker run ${image_name}
