@@ -1,0 +1,2 @@
+
+{ [ -f "$HOME/.x-cmd/.boot/boot" ] && . "$HOME/.x-cmd/.boot/boot"; } || eval "$(curl https://get.x-cmd.com/dev)"
