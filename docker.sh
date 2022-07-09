@@ -14,4 +14,4 @@ docker buildx build \
         --no-cache \
         --platform "${PLATFORM:-linux/arm,linux/arm64,linux/amd64}" \
         -f "$FILE" \
-        -t "$IMAGE" . --push
+        -t "$image_id/$IMAGE" . --push
