@@ -2,8 +2,8 @@
 image_id='1104437281'
 image_pwd='hst7562336'
 docker login -u ${image_id} --password ${image_pwd}
-FILE='./src/alpine/1-curl.Dockerfile'
-IMAGE='1-curl'
+FILE='./src/debian/1-curl.9.Dockerfile'
+IMAGE='1-curl.9'
 # docker build -t ${image_name} .
 # docker run ${image_name}
 # docker image tag ${image_name} ${image_id}/${image_name}
