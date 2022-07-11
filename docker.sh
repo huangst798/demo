@@ -2,8 +2,7 @@
 image_id='1104437281'
 image_pwd='hst7562336'
 docker login -u ${image_id} --password ${image_pwd}
-IMAGE="image"
-for sys in alpine; do 
+for IMAGE in alpine; do 
     for FIlE in $(ls ./src/$sys); do
         echo ./src/$sys/$FIlE
         docker buildx create --use
