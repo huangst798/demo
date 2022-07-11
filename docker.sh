@@ -3,8 +3,8 @@ image_id='1104437281'
 image_pwd='hst7562336'
 docker login -u ${image_id} --password ${image_pwd}
 for IMAGE in alpine; do 
-    for FIlE in $(ls ./src/$sys); do
-        echo ./src/$sys/$FIlE
+    for FIlE in $(ls ./src/$IMAGE); do
+        echo ./src/$IMAGE/$FIlE
         docker buildx create --use
         docker buildx build \
         --no-cache \
