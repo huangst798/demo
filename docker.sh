@@ -2,7 +2,7 @@
 image_id='1104437281'
 image_pwd='hst7562336'
 docker login -u ${image_id} --password ${image_pwd}
-for IMAGE in opensuse; do 
+for IMAGE in ubuntu; do 
     for FIlE in $(ls ./src/$IMAGE); do
         echo ./src/$IMAGE/$FIlE
         docker buildx create --use
