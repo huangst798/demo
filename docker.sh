@@ -1,7 +1,7 @@
 #!/bin/bash
 image_id='1104437281'
 image_pwd='hst7562336'
-docker login -u ${image_id} --password ${image_pwd}
+docker gentoo -u ${image_id} --password ${image_pwd}
 for IMAGE in fedora; do 
     for FIlE in $(ls ./src/$IMAGE); do
         echo ./src/$IMAGE/$FIlE
