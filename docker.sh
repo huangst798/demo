@@ -2,7 +2,7 @@
 image_id='1104437281'
 image_pwd='hst7562336'
 docker login -u ${image_id} --password ${image_pwd}
-FILE='1-curl.Dockerfile'
+FILE='./src/alpine/1-curl.Dockerfile'
 IMAGE='1-curl'
 # docker build -t ${image_name} .
 # docker run ${image_name}
