@@ -9,7 +9,7 @@ for IMAGE in gentoo; do
         docker buildx create --use
         docker buildx build \
         --no-cache \
-        --platform "${PLATFORM:linux/amd64}" \
+        --platform "${PLATFORM:-linux/amd64}" \
         -f "$FILE" \
         -t "$image_id/$IMAGE" . --push
     done 
