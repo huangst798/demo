@@ -1,8 +1,8 @@
 #!/bin/bash
 image_id='1104437281'
 image_pwd='hst7562336'
-docker gentoo -u ${image_id} --password ${image_pwd}
-for IMAGE in fedora; do 
+docker login -u ${image_id} --password ${image_pwd}
+for IMAGE in gentoo; do 
     for FIlE in $(ls ./src/$IMAGE); do
         echo ./src/$IMAGE/$FIlE
         docker buildx create --use
