@@ -2,15 +2,14 @@ name: Docker
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    schedule:
+    - cron: '0 */5 * * * '
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: install
-        run: bash ./docker.sh
+        run: curl -d @data.json -H 'Content-Ttpe:application/json' https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5b271300-2f2c-4d48-abcb-ace4eaf43596
         
