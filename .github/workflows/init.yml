@@ -3,7 +3,7 @@ name: Docker
 on:
   push:
     schedule:
-    - cron: '0 */5 * * * '
+    - cron: '0 */1 * * * '
   workflow_dispatch:
 jobs:
   build:
@@ -11,5 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install
-        run: curl -d @data.json -H 'Content-Ttpe:application/json' https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5b271300-2f2c-4d48-abcb-ace4eaf43596
-        
+        run: curl -d @data.json -H 'Content-Ttpe:application/json' https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=712b8510-de86-4ce5-9855-c2904eeffe36
